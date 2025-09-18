@@ -1,0 +1,93 @@
+* {
+    border: 0;
+    padding: 0;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* .card{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(164, 229, 209);
+    height: 400px;
+    width: 270px;
+} */
+.about h3,
+p {
+    text-align: center;
+}
+
+.photo img {
+    width: 120px;
+    /* smaller, neat size */
+    height: 120px;
+    /* keep it square */
+    object-fit: cover;
+    /* crop instead of stretch */
+    border-radius: 50%;
+    /* perfect circle */
+    border: 3px solid white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.1);
+    /* zoom in */
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.4);
+    /* glow effect */
+}
+
+.photo {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.contact a:hover {
+    color: #1e3c72;
+    /* Deep Blue on hover */
+    transform: scale(1.1);
+    /* Slight zoom */
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    /* soft gradient */
+    height: 400px;
+    width: 270px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+}
+
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 22px 40px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #e3cc81, #f17bdd);
+    /* warm golden-orange hover gradient */
+}
